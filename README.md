@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NIVEA E-Commerce Store (Concept)
 
-## Getting Started
+A premium, full-featured e-commerce website built with Next.js, inspired by the NIVEA brand.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Modern UI/UX**: Clean, professional design with NIVEA branding.
+- **Animations**: Smooth transitions using Framer Motion.
+- **Product Management**: Full catalog with detailed product pages.
+- **Cart System**: Global state management for persistent shopping cart.
+- **Checkout Flow**: Multi-step checkout process (Shipping -> Payment -> Review).
+- **Admin Dashboard**: Analytics, order tracking, and product management.
+- **Auth**: Modern Login/Sign-up pages.
+- **Responsive**: Mobile-first design.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js 15 (App Router), Tailwind CSS 4, TypeScript.
+- **Animations**: Framer Motion.
+- **Icons**: Lucide React.
+- **State Management**: React Context.
+- **Images**: AI-generated premium assets.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏁 Getting Started
 
-## Learn More
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Backend Integration**:
+   This frontend is ready to be connected to a backend like Supabase, MongoDB, or Firebase. 
+   - Update `src/lib/data.ts` to fetch from an API.
+   - Configure Stripe/PayPal in `src/app/checkout/page.tsx`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+- `src/app`: Routes and Pages
+- `src/components`: UI Components, Home Sections, Layout
+- `src/lib`: Utilities, Data, Context
+- `public/images`: Branded assets
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Branding Colors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Nivea Blue**: `#003580`
+- **Nivea Light Blue**: `#E6F0FF`
+- **Text Dark**: `#333333`
+- **Background**: `#FFFFFF`
+
+---
+Developed with ❤️ by Antigravity

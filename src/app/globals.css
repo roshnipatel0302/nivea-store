@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-blue: #003580;
+  --color-brand-accent: #00A896;
+  --color-text-dark: #0A1F44;
+  --color-text-soft: #4A5568;
+
+  --shadow-premium: 0 40px 80px -20px rgba(0, 53, 128, 0.15);
+
+  /* Unified Font Family */
+  --font-sans: var(--font-plus-jakarta), 'Plus Jakarta Sans', ui-sans-serif, system-ui;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --n-blue: #003580;
+  --n-light-blue: #0056D2;
+  --n-white: #FFFFFF;
+  --n-gray: #F8FBFF;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--n-white);
+  color: #0A1F44;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Force unified font on all headings and elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-sans) !important;
+}
+
+.selection\:bg-brand-blue::selection {
+  background-color: #003580;
+  color: white;
+}
+
+/* Premium UI Polish */
+.btn-nivea {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 3.5rem;
+  background-color: #003580;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 10px;
+  border-radius: 9999px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0 20px 40px -10px rgba(0, 53, 128, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-nivea:hover {
+  background-color: #0056D2;
+  box-shadow: 0 30px 50px -10px rgba(0, 53, 128, 0.4);
+  transform: translateY(-3px);
+}
+
+.text-gradient-nivea {
+  background: linear-gradient(135deg, #003580 0%, #0056D2 50%, #00A896 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom Utilities */
+.shadow-premium {
+  box-shadow: var(--shadow-premium);
+}
+
+.ease-out-expo {
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
