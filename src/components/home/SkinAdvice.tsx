@@ -45,7 +45,7 @@ const SkinAdvice = () => {
                             <BookOpen size={16} />
                             <span className="text-[10px] font-black uppercase tracking-[0.3em]">Knowledge</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-black text-[#003580] uppercase tracking-tighter">
+                        <h2 className="text-2xl md:text-5xl font-black text-[#003580] uppercase tracking-tighter">
                             Advanced <span className="text-gradient-nivea">Guides.</span>
                         </h2>
                     </div>

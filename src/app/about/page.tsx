@@ -25,11 +25,11 @@ const AboutPage = () => {
                             <span className="w-8 h-[2px] bg-[#003580]" />
                             <span>Since 1911 Legacy</span>
                         </div>
-                        <h1 className="text-4xl md:text-[85px] font-black text-[#003580] leading-[0.85] tracking-tighter mb-8">
+                        <h1 className="text-2xl md:text-[85px] font-black text-[#003580] leading-[0.85] tracking-tighter mb-8">
                             Trust Is The <br />
                             <span className="text-gradient-nivea">Best Skin Care.</span>
                         </h1>
-                        <p className="text-base md:text-lg text-gray-500 font-medium leading-relaxed max-w-lg mb-10">
+                        <p className="text-sm md:text-lg text-gray-500 font-medium leading-relaxed max-w-lg mb-10">
                             For over 100 years, NIVEA has been a companion for life. We understand skin like no one else, providing care that is simple, reliable, and effective.
                         </p>
                     </motion.div>
@@ -111,18 +111,18 @@ const AboutPage = () => {
                                 >
                                     <Quote size={80} className="absolute -top-12 -left-8 text-blue-50/80 -z-10" strokeWidth={3} />
 
-                                    <h2 className="text-3xl md:text-6xl font-black text-[#003580] mb-12 uppercase tracking-tighter leading-tight">
+                                    <h2 className="text-2xl md:text-6xl font-black text-[#003580] mb-12 uppercase tracking-tighter leading-tight">
                                         Our Promise <br />To <span className="text-gradient-nivea">You.</span>
                                     </h2>
 
                                     <div className="space-y-10">
                                         <div className="relative pl-8 border-l-4 border-blue-50">
-                                            <p className="text-lg md:text-xl text-[#0A1F44] font-medium leading-[1.4] tracking-tight">
+                                            <p className="text-sm md:text-xl text-[#0A1F44] font-medium leading-[1.4] tracking-tight">
                                                 At NIVEA, we believe that skincare is more than just products; it's about the <span className="text-[#003580] font-black italic">moments of care</span> you give to yourself and your loved ones.
                                             </p>
                                         </div>
 
-                                        <p className="text-lg md:text-xl text-gray-500 font-medium leading-relaxed font-sans">
+                                        <p className="text-sm md:text-xl text-gray-500 font-medium leading-relaxed font-sans">
                                             Our formulas are crafted with the perfect balance of science and nature. We are continuously innovating to reduce our environmental footprint while maintaining the legendary quality of our blue tin.
                                         </p>
 
