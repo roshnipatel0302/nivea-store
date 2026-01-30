@@ -25,15 +25,15 @@ const AboutPage = () => {
                             <span className="w-8 h-[2px] bg-[#003580]" />
                             <span>Since 1911 Legacy</span>
                         </div>
-                        <h1 className="text-6xl md:text-[85px] font-black text-[#003580] leading-[0.85] tracking-tighter mb-8">
+                        <h1 className="text-4xl md:text-[85px] font-black text-[#003580] leading-[0.85] tracking-tighter mb-8">
                             Trust Is The <br />
                             <span className="text-gradient-nivea">Best Skin Care.</span>
                         </h1>
-                        <p className="text-lg text-gray-500 font-medium leading-relaxed max-w-lg mb-10">
+                        <p className="text-base md:text-lg text-gray-500 font-medium leading-relaxed max-w-lg mb-10">
                             For over 100 years, NIVEA has been a companion for life. We understand skin like no one else, providing care that is simple, reliable, and effective.
                         </p>
                     </motion.div>
-                    <div className="relative aspect-square rounded-[60px] overflow-hidden shadow-2xl border-8 border-white group bg-gray-50">
+                    <div className="relative aspect-square rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl border-4 md:border-8 border-white group bg-gray-50">
                         <Image
                             src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=1200"
                             alt="NIVEA Heritage"
@@ -62,7 +62,7 @@ const AboutPage = () => {
                                 whileHover={{ y: -10 }}
                                 transition={{ delay: idx * 0.1 }}
                                 viewport={{ once: true }}
-                                className="group relative bg-white p-12 rounded-[50px] border border-gray-100 transition-all duration-500 hover:shadow-[0_50px_100px_-20px_rgba(0,53,128,0.15)] hover:bg-blue-50/30 text-center cursor-default"
+                                className="group relative bg-white p-10 md:p-12 rounded-[40px] md:rounded-[50px] border border-gray-100 transition-all duration-500 hover:shadow-[0_50px_100px_-20px_rgba(0,53,128,0.15)] hover:bg-blue-50/30 text-center cursor-default"
                             >
                                 <div className="w-16 h-16 bg-blue-50 rounded-[20px] flex items-center justify-center text-[#003580] mx-auto mb-8 group-hover:bg-[#003580] group-hover:text-white transition-all duration-500 shadow-sm">
                                     <item.icon size={28} strokeWidth={1.5} />
@@ -90,7 +90,7 @@ const AboutPage = () => {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
-                                className="lg:col-span-2 relative aspect-[3/4] rounded-[60px] overflow-hidden shadow-2xl bg-gray-50"
+                                className="lg:col-span-2 relative aspect-[3/4] rounded-[40px] md:rounded-[60px] overflow-hidden shadow-2xl bg-gray-50"
                             >
                                 <Image
                                     src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&q=80&w=800"
@@ -111,7 +111,7 @@ const AboutPage = () => {
                                 >
                                     <Quote size={80} className="absolute -top-12 -left-8 text-blue-50/80 -z-10" strokeWidth={3} />
 
-                                    <h2 className="text-5xl md:text-6xl font-black text-[#003580] mb-12 uppercase tracking-tighter leading-tight">
+                                    <h2 className="text-3xl md:text-6xl font-black text-[#003580] mb-12 uppercase tracking-tighter leading-tight">
                                         Our Promise <br />To <span className="text-gradient-nivea">You.</span>
                                     </h2>
 

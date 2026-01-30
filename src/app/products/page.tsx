@@ -30,13 +30,13 @@ const ProductsPage = () => {
                             <span className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-400">Pure Care Collection 2026</span>
                         </motion.div>
 
-                        <h1 className="text-6xl md:text-[90px] font-black text-[#003580] uppercase tracking-tighter leading-[0.85] mb-10">
+                        <h1 className="text-4xl md:text-[90px] font-black text-[#003580] uppercase tracking-tighter leading-[0.85] mb-10">
                             The Elite <br />
                             <span className="text-gradient-nivea">Experience.</span>
                         </h1>
 
                         <div className="flex flex-col md:flex-row md:items-center gap-10 border-l-[6px] border-blue-50 pl-10 ml-1">
-                            <p className="text-xl text-[#4A5568] font-medium max-w-xl leading-relaxed opacity-80">
+                            <p className="text-lg md:text-xl text-[#4A5568] font-medium max-w-xl leading-relaxed opacity-80">
                                 Curated essentials backed by a century of dermatological innovation. Trust your skin to the original masters of blue care.
                             </p>
                         </div>

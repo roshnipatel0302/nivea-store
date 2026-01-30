@@ -268,31 +268,55 @@ const Navbar = () => {
         </AnimatePresence>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Refined Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-white z-[90] lg:hidden flex flex-col pt-32 px-12"
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 bg-white z-[110] lg:hidden flex flex-col pt-32 px-12"
           >
-            <button onClick={() => setIsMobileMenuOpen(false)} className="absolute top-10 right-10 text-[#003580]">
-              <X size={44} />
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="absolute top-10 right-10 w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center text-[#003580] hover:bg-blue-100 transition-all"
+            >
+              <X size={32} />
             </button>
-            {menuItems.map((item, idx) => (
-              <Link
-                key={idx}
-                href={item.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={cn(
-                  "text-5xl font-black mb-8 tracking-tighter transition-all",
-                  isActive(item.href) ? "text-[#003580] translate-x-8" : "text-gray-200"
-                )}
-              >
-                {item.name}
-              </Link>
-            ))}
+            <div className="flex flex-col space-y-4">
+              {menuItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.1 + idx * 0.05 }}
+                >
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={cn(
+                      "text-xl md:text-2xl font-black tracking-tight transition-all block py-2 px-6 rounded-2xl",
+                      isActive(item.href)
+                        ? "text-[#003580] bg-blue-50/50"
+                        : "text-gray-400 hover:text-[#003580] hover:bg-gray-50"
+                    )}
+                  >
+                    {item.name}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="mt-auto mb-20">
+              <div className="h-0.5 w-12 bg-blue-100 mb-8" />
+              <div className="space-y-4">
+                <span className="block text-[10px] font-black uppercase tracking-[0.4em] text-gray-300">Skin Expertise</span>
+                <p className="text-gray-400 text-sm font-medium leading-relaxed">
+                  Join millions who trust NIVEA <br /> for their daily care.
+                </p>
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

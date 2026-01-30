@@ -24,12 +24,12 @@ const Hero = () => {
                             <span>Skin Science Heritage</span>
                         </div>
 
-                        <h1 className="text-6xl md:text-[80px] font-black text-[#003580] leading-[0.9] tracking-tighter mb-8">
+                        <h1 className="text-5xl md:text-[80px] font-black text-[#003580] leading-[0.9] tracking-tighter mb-8">
                             Pure Care. <br />
                             <span className="text-gradient-nivea">Daily Glow.</span>
                         </h1>
 
-                        <p className="text-lg md:text-xl text-[#4A5568] font-medium leading-relaxed max-w-lg mb-12 opacity-80">
+                        <p className="text-base md:text-xl text-[#4A5568] font-medium leading-relaxed max-w-lg mb-12 opacity-80">
                             Experience 100 years of dermatologically tested care. Our formulas are crafted to protect and nurture your skin's natural beauty.
                         </p>
 

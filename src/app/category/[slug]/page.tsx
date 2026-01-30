@@ -49,7 +49,7 @@ const CategoryPage = () => {
                             <span className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-400">Expert Range &bull; 2026</span>
                         </motion.div>
 
-                        <h1 className="text-6xl md:text-[95px] font-black text-[#003580] uppercase tracking-tighter mb-8 leading-[0.85]">
+                        <h1 className="text-4xl md:text-[95px] font-black text-[#003580] uppercase tracking-tighter mb-8 leading-[0.85]">
                             {categoryName || "All Products"} <br />
                             <span className="text-gradient-nivea">Collection.</span>
                         </h1>
@@ -59,7 +59,7 @@ const CategoryPage = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.2 }}
-                                className="text-xl text-[#4A5568] font-medium max-w-xl leading-relaxed opacity-80"
+                                className="text-lg md:text-xl text-[#4A5568] font-medium max-w-xl leading-relaxed opacity-80"
                             >
                                 Experience the perfect harmony of science and skin care expertise. Our {categoryName || "complete"} range is dermatologically perfected for your well-being.
                             </motion.p>
