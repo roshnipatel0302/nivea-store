@@ -8,7 +8,15 @@ import { ArrowLeft, ArrowRight, Sparkles } from "lucide-react";
 
 const FeaturedProducts = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
     const displayCount = 4;
+
+    React.useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     const next = () => {
         if (currentIndex < products.length - displayCount) {
@@ -55,14 +63,22 @@ const FeaturedProducts = () => {
                 </div>
 
                 <div className="relative">
-                    <div className="overflow-visible">
+                    {/* Responsive Container: Snap-scroll on mobile, controlled on desktop */}
+                    <div className="overflow-x-auto md:overflow-hidden no-scrollbar -mx-6 px-6 pb-8 md:pb-0 snap-x snap-mandatory scroll-smooth">
                         <motion.div
-                            className="flex gap-6"
-                            animate={{ x: `calc(-${currentIndex * (100 / displayCount)}% - ${currentIndex * 24}px)` }}
+                            className="flex gap-6 w-max md:w-full"
+                            animate={{
+                                x: !isMobile
+                                    ? `calc(-${currentIndex * (100 / displayCount)}% - ${currentIndex * 24}px)`
+                                    : 0
+                            }}
                             transition={{ type: "spring", stiffness: 200, damping: 30 }}
                         >
                             {products.map((product) => (
-                                <div key={product.id} className="min-w-[calc(25%-18px)] flex-shrink-0">
+                                <div
+                                    key={product.id}
+                                    className="w-[82vw] sm:w-[45vw] md:w-[calc(25%-18px)] flex-shrink-0 snap-center px-1"
+                                >
                                     <ProductCard product={product} />
                                 </div>
                             ))}
@@ -70,12 +86,14 @@ const FeaturedProducts = () => {
                     </div>
                 </div>
 
-                {/* Simplified Progress Indicator */}
-                <div className="mt-16 flex justify-center items-center">
-                    <div className="w-64 h-[2px] bg-gray-100 rounded-full relative">
+                {/* Simplified Progress Indicator - Hidden on Mobile if free-scrolling */}
+                <div className="mt-12 md:mt-16 flex justify-center items-center">
+                    <div className="w-48 md:w-64 h-[2px] bg-gray-100 rounded-full relative">
                         <motion.div
                             className="absolute inset-y-0 left-0 bg-[#003580] rounded-full"
-                            animate={{ width: `${((currentIndex + displayCount) / products.length) * 100}%` }}
+                            style={{
+                                width: `${((currentIndex + displayCount) / products.length) * 100}%`
+                            }}
                             transition={{ duration: 0.5 }}
                         />
                     </div>

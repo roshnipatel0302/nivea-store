@@ -59,7 +59,7 @@ const Hero = () => {
                     >
                         <div className="absolute inset-0 rounded-[60px] overflow-hidden shadow-2xl border-8 border-white">
                             <Image
-                                src="https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80&w=1200"
+                                src="https://images.unsplash.com/photo-1552046122-03184de85e08?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2tpbmNhcmV8ZW58MHx8MHx8fDA%3D"
                                 alt="NIVEA Model"
                                 fill
                                 className="object-cover"

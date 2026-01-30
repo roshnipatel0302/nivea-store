@@ -9,9 +9,9 @@ const navItems = [
     { name: "Face Care", image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=600" },
     { name: "Body Care", image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=600" },
     { name: "NIVEA MEN", image: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&q=80&w=600" },
-    { name: "Sun Protection", image: "https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80&w=600" },
-    { name: "Deodorants", image: "https://images.unsplash.com/photo-1594125356779-130099645213?auto=format&fit=crop&q=80&w=600" },
-    { name: "Lip Care", image: "https://images.unsplash.com/photo-1617351677365-728b97f0fb5f?auto=format&fit=crop&q=80&w=600" },
+    { name: "Sun Protection", image: "https://images.unsplash.com/photo-1594527964562-32ed6eb11709?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U3Vuc2NyZWVufGVufDB8fDB8fHww" },
+    { name: "Deodorants", image: "https://images.unsplash.com/photo-1654973552952-d0c98a3e3388?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFN1bnNjcmVlbnxlbnwwfHwwfHx8MA%3D%3D" },
+    { name: "Lip Care", image: "https://images.unsplash.com/photo-1752327091269-56857d148787?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5pdmVhfGVufDB8fDB8fHww" },
 ];
 
 const QuickNav = () => {

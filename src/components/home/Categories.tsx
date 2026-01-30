@@ -13,7 +13,7 @@ const Categories = () => {
                     {/* Derma Promo */}
                     <div className="relative h-[550px] rounded-[40px] overflow-hidden bg-[#EBF2FA] group">
                         <Image
-                            src="https://images.unsplash.com/photo-1556228448-59b86ad27980?auto=format&fit=crop&q=80&w=1000"
+                            src="https://images.unsplash.com/photo-1555820585-c5ae44394b79?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2tpbmNhcmV8ZW58MHx8MHx8fDA%3D"
                             alt="Derma Range"
                             fill
                             className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
@@ -37,7 +37,7 @@ const Categories = () => {
                     {/* Luminous Promo */}
                     <div className="relative h-[550px] rounded-[40px] overflow-hidden bg-[#F8FBFF] group">
                         <Image
-                            src="https://images.unsplash.com/photo-1594489428504-5c0c380a45fd?auto=format&fit=crop&q=80&w=1000"
+                            src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNraW5jYXJlfGVufDB8fDB8fHww"
                             alt="Luminous Range"
                             fill
                             className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"

@@ -9,19 +9,19 @@ const editorPicks = [
     {
         category: "SKIN SCIENCE",
         title: "The Molecular Secrets of NIVEA Deodorants",
-        image: "https://images.unsplash.com/photo-1594125356779-130099645213?auto=format&fit=crop&q=80&w=600",
+        image: "https://images.unsplash.com/photo-1619451427882-6aaaded0cc61?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNraW5jYXJlfGVufDB8fDB8fHww",
         readTime: "5 min"
     },
     {
         category: "BODY RITUALS",
         title: "Bathing vs Showering: The Ultimate Hydration Guide",
-        image: "https://images.unsplash.com/photo-1626477103214-3d12d97ad023?auto=format&fit=crop&q=80&w=600",
+        image: "https://images.unsplash.com/photo-1617778368431-f97343a411ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNraW5jYXJlfGVufDB8fDB8fHww",
         readTime: "4 min"
     },
     {
         category: "HERITAGE CARE",
         title: "Why NIVEA Soft Remains a Global Skincare Icon",
-        image: "https://images.unsplash.com/photo-1590439471364-192aa70c0b53?auto=format&fit=crop&q=80&w=600",
+        image: "https://images.unsplash.com/photo-1580870069867-74c57ee1bb07?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNraW5jYXJlfGVufDB8fDB8fHww",
         readTime: "6 min"
     }
 ];
@@ -88,7 +88,7 @@ const SkinAdvice = () => {
             </div>
 
             {/* Stories - Simple & Attractive */}
-            <div className="container mx-auto px-6 md:px-12 pt-20 border-t border-gray-100">
+            {/* <div className="container mx-auto px-6 md:px-12 pt-20 border-t border-gray-100">
                 <div className="flex items-center space-x-12 overflow-x-auto pb-10 no-scrollbar">
                     {beautyStories.map((story, idx) => (
                         <div key={idx} className="flex-shrink-0 flex flex-col items-center group cursor-pointer">
@@ -103,7 +103,7 @@ const SkinAdvice = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };
