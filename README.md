@@ -1,56 +1,37 @@
-# NIVEA E-Commerce Store (Concept)
+# NIVEA Store - Premium E-Commerce Platform
 
-A premium, full-featured e-commerce website built with Next.js, inspired by the NIVEA brand.
+A high-end, luxury skincare e-commerce experience built with Next.js, Tailwind CSS, and Framer Motion.
 
-## 🚀 Features
+## 🌟 Features
 
-- **Modern UI/UX**: Clean, professional design with NIVEA branding.
-- **Animations**: Smooth transitions using Framer Motion.
-- **Product Management**: Full catalog with detailed product pages.
-- **Cart System**: Global state management for persistent shopping cart.
-- **Checkout Flow**: Multi-step checkout process (Shipping -> Payment -> Review).
-- **Admin Dashboard**: Analytics, order tracking, and product management.
-- **Auth**: Modern Login/Sign-up pages.
-- **Responsive**: Mobile-first design.
+- **Elite Mega Menu**: High-impact navigation with dynamic hover effects and authority badges.
+- **Premium Catalog**: Curated product ranges for Face, Sun, Body, and Men's care.
+- **Modern UI/UX**: Architectural accents, smooth transitions, and a boutique design aesthetic.
+- **Responsive Design**: Optimized for a seamless experience across all devices.
+- **Skin Care Expertise**: Integrated dermatological advice and product science.
 
-## 🛠️ Tech Stack
+## 🚀 Tech Stack
 
-- **Frontend**: Next.js 15 (App Router), Tailwind CSS 4, TypeScript.
-- **Animations**: Framer Motion.
-- **Icons**: Lucide React.
-- **State Management**: React Context.
-- **Images**: AI-generated premium assets.
+- **Framework**: Next.js 15+ (App Router)
+- **Styling**: Tailwind CSS & Vanilla CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Typography**: Plus Jakarta Sans
 
-## 🏁 Getting Started
+## 🛠️ Getting Started
 
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+First, run the development server:
 
-2. **Run Development Server**:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-3. **Backend Integration**:
-   This frontend is ready to be connected to a backend like Supabase, MongoDB, or Firebase. 
-   - Update `src/lib/data.ts` to fetch from an API.
-   - Configure Stripe/PayPal in `src/app/checkout/page.tsx`.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📁 Project Structure
+## 📄 License
 
-- `src/app`: Routes and Pages
-- `src/components`: UI Components, Home Sections, Layout
-- `src/lib`: Utilities, Data, Context
-- `public/images`: Branded assets
-
-## 🎨 Branding Colors
-
-- **Nivea Blue**: `#003580`
-- **Nivea Light Blue**: `#E6F0FF`
-- **Text Dark**: `#333333`
-- **Background**: `#FFFFFF`
-
----
-Developed with ❤️ by Antigravity
+Project for educational and portfolio purposes. All brand assets belong to NIVEA.
